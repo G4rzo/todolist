@@ -1,0 +1,77 @@
+
+* { /*deixar o css padrão do navegador*/
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font: 400 16px 'Roboto', sans-serif;
+}
+.input-task { /*estilizar o input de adicionar tarefa*/
+   background-color: rgb(32, 32, 32);
+   color: white;
+   border: none;
+   border-radius: 10px;
+   width: 350px;
+   height: 40px;
+   outline: none;
+   padding: 1%;
+}
+.button-add-task { /*estilização do botão*/
+   background-color: rgb(64, 64, 64);
+   color: white;
+   border: none;
+   border-radius: 10px;
+   width: 100px;
+   height: 40px;
+   font-weight: 600;
+   outline: none;
+   align-items: end;
+   cursor: pointer;
+}
+
+.button-add-task:hover { /*deixar o botão mais escuro quando passar o mouse por cima*/
+   opacity: 0.8;
+}
+.button-add-task:active { /*deixar o botão mais claro quando clicar*/
+   opacity: 0.6;
+}
+body { /*botar as meninas de fundo*/
+   background: url("img/background.png");
+   background-size: cover;
+}
+
+.box { /*estilização da caixa de texto*/
+    background-color: rgba(0, 0, 0, 0.478);
+    color: white;
+    width: 700px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.list-tasks{
+   list-style: none;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.task{
+   background-color: rgb(38, 38, 38);
+   border-radius: 20px;
+   padding: 15px 15px;
+   outline: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+img { /*icones*/
+   height: 35px;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+}
+
+.task:hover img { /*aparecer os icones quando passar o mouse na tarefa*/
+   opacity: 1;
+}
