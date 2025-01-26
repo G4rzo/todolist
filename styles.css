@@ -10,7 +10,7 @@
    color: white;
    border: none;
    border-radius: 10px;
-   width: 350px;
+   width: 550px;
    height: 40px;
    outline: none;
    padding: 1%;
@@ -64,6 +64,13 @@ body { /*botar as meninas de fundo*/
    justify-content: space-between;
    margin-bottom: 20px;
    cursor: pointer;
+   opacity: 1;
+   transition: opacity 1s ease-in-out;
+}
+
+.done{
+   color: rgb(32, 32, 32);
+   background-color: rgb(23, 167, 85);
 }
 
 img { /*icones*/
