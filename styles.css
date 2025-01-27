@@ -1,11 +1,11 @@
 
-* { /*deixar o css padrão do navegador*/
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font: 400 16px 'Roboto', sans-serif;
 }
-.input-task { /*estilizar o input de adicionar tarefa*/
+.input-task {
    background-color: rgb(32, 32, 32);
    color: white;
    border: none;
@@ -15,7 +15,7 @@
    outline: none;
    padding: 1%;
 }
-.button-add-task { /*estilização do botão*/
+.button-add-task {
    background-color: rgb(64, 64, 64);
    color: white;
    border: none;
@@ -28,18 +28,18 @@
    cursor: pointer;
 }
 
-.button-add-task:hover { /*deixar o botão mais escuro quando passar o mouse por cima*/
+.button-add-task:hover {
    opacity: 0.8;
 }
-.button-add-task:active { /*deixar o botão mais claro quando clicar*/
+.button-add-task:active {
    opacity: 0.6;
 }
-body { /*botar as meninas de fundo*/
+body {
    background: url("img/background.png");
    background-size: cover;
 }
 
-.box { /*estilização da caixa de texto*/
+.box {
     background-color: rgba(0, 0, 0, 0.478);
     color: white;
     width: 700px;
@@ -73,12 +73,12 @@ body { /*botar as meninas de fundo*/
    background-color: rgb(23, 167, 85);
 }
 
-img { /*icones*/
+img {
    height: 35px;
    opacity: 0;
    transition: opacity 0.3s ease-in-out;
 }
 
-.task:hover img { /*aparecer os icones quando passar o mouse na tarefa*/
+.task:hover img {
    opacity: 1;
 }

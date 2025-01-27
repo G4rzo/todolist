@@ -1,4 +1,4 @@
-const input = document.querySelector('.input-task') ///id serve para identificar o elemento////
+const input = document.querySelector('.input-task')
 const button = document.querySelector('.button-add-task')
 const completeList = document.querySelector('.list-tasks')
 
@@ -42,7 +42,6 @@ function editTask(index){
     showTasks()
 }
 
-
 /*FAZER O BAGULHO DA BINARY TREE PARA PODER MOVER OS OBJ E SALVAR NO LOCAL STORAGE*/
 function completeTask(index){
     
@@ -81,6 +80,9 @@ function dragEnd(event) {
     event.target.classList.remove('dragging')
 }
 
+localStorage.setItem("TaskList", ".taskList")
+const taskList = localStorage.getItem("TaskList")
+console.log(taskList)
 
 button.addEventListener('click', addNewTask)
 input.addEventListener('keypress', function(e){
